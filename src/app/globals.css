@@ -25,3 +25,35 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.br2.animado{
+  opacity: 0;
+  transition: transform 1s ease;
+}
+
+.br1.animado{
+  transform: rotate(45deg) translate(9px,8px);
+  transform-origin: 0% 100%;
+  transition: transform 1s ease;
+}
+
+.br3.animado{
+  transform: rotate(-45deg) translate(-6px,8px);
+  transform-origin: 0% 100%;
+  transition: transform 1s ease;
+}
+
+.br2 {
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+
+.br1 {
+  transform: none;
+  transition: transform 1s ease;
+}
+
+.br3 {
+  transform: none;
+  transition: transform 1s ease;
+}

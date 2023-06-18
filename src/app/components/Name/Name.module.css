@@ -1,0 +1,37 @@
+.border {
+position: relative;
+}
+
+.border h1::after{
+content: "";
+position: absolute;
+left: 0;
+height: 100%;
+width: 100%;
+background: #000;
+border-left: 2px solid red;
+animation: typing 4s steps(40) normal forwards, pulse 2s infinite
+}
+
+@keyframes typing {
+  0%{
+    width: 100%;
+  }
+  50%{
+    width: 50%;
+  }
+    100%{
+        left: 100%;
+        margin: 0 35px 0 5px;
+        width: 10%;
+    }
+}
+
+@keyframes pulse {
+    0%, 50%, 100% {
+      border-color: red;
+    }
+    25%, 75% {
+      border-color: transparent;
+    }
+  }
