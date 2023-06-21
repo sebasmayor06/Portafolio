@@ -5,24 +5,18 @@ import miFoto from '../../../../public/image/yo-removebg-preview.png'
 import style from './Sobremi.module.css'
 import Tecnologias from '../Tecnologias/Tecnologias'
 import Educacion from '../Educacion/Educacion'
-import { motion, useScroll } from 'framer-motion'
+import { motion } from 'framer-motion'
 import Transition from '../Transition/Transition'
-import { useRef } from 'react'
+
 import Footer from '../Name/footer'
 
 export default function Sobremi() {
-const ref = useRef(null)
-const {scrollYProgress} = useScroll(
-  {
-    target:ref,
-    offset:["start center", "center start"]
-}
-)
+
 
   return (
     <>
     <Transition></Transition>
-    <main className="flex min-h-screen flex-col items-center justify-between md:flex-col md:justify-around gap-10 sm:gap-20">
+    <main className="flex  flex-col items-center justify-between md:flex-col md:justify-around gap-10 sm:gap-20">
         <div className="flex min-h-screen flex-col items-center justify-between md:flex-row md:justify-around ">
         
         <motion.div  className=' md:relative md:bottom-20'  whileHover={{y:-10}} >
@@ -37,12 +31,12 @@ const {scrollYProgress} = useScroll(
         </div>
         </div>
 
-<div className='  sm:mb-10'>
+<div className='sm:mb-10 flex justify-center items-center'>
           <Educacion></Educacion>
 </div>
         <div className='  sm:mt-10'>
 
-          <Tecnologias ref={ref} scrollYProgress={scrollYProgress}></Tecnologias>
+          <Tecnologias ></Tecnologias>
         </div>
 
        

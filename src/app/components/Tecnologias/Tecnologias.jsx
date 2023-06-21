@@ -4,7 +4,7 @@ import {array} from '../FotosTec/FotosTec'
 import Cards from './Cards'
 import { motion } from 'framer-motion'
 
-export default function page({scrollYProgress, ref}) {
+export default function page() {
   return (
     <div>
       <div>
@@ -13,7 +13,7 @@ export default function page({scrollYProgress, ref}) {
       
       <div>
        
-<Cards obras={array} scrollYProgress={scrollYProgress} ref={ref}></Cards>
+<Cards obras={array} ></Cards>
       </div>
       
       </div>

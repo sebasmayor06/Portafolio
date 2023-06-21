@@ -2,7 +2,7 @@
 import Card from "./Card";
 import { motion } from 'framer-motion'
 
-export default function Cards({ obras, scrollYProgress, ref }) {
+export default function Cards({ obras}) {
   
   return (
    

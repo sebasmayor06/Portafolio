@@ -1,11 +1,11 @@
 import javas from '../../../../public/imageTec/javascript.png'
 import Reacts from '../../../../public/imageTec/React.svg.png'
-import reduxs from '../../../../public/imageTec/react-redux-221761.png'
+import reduxs from '../../../../public/imageTec/free-redux-3629018-3030243.png'
  import githubs from '../../../../public/imageTec/github.png'
 import git from '../../../../public/imageTec/Git-Icon-1788C.png'
 import POSTGRESQL from '../../../../public/imageTec/Postgresql_elephant.svg.png'
 import Express from '../../../../public/imageTec/express.png'
- import trello from '../../../../public/imageTec/trello.png'
+ import trello from '../../../../public/imageTec/trello_logo_icon_189227.png'
  import css3 from '../../../../public/imageTec/CSS3_logo_and_wordmark.svg.png'
 import html from '../../../../public/imageTec/HTML5_logo_and_wordmark.svg.png'
 import node from '../../../../public/imageTec/node.png'
@@ -14,6 +14,7 @@ import taildwind from '../../../../public/imageTec/Tailwind_CSS_Logo.svg.png'
 import scrum from '../../../../public/imageTec/scrum.png'
 import sequelize from '../../../../public/imageTec/sequelize-logo-9A5075DB9F-seeklogo.com.png'
 import postman from '../../../../public/imageTec/postman.svg'
+import next from '../../../../public/imageTec/nextjs-icon-dark-background.png'
 
 export const array = [
     {
@@ -82,5 +83,9 @@ export const array = [
     {
         name: "EXPRESS.JS",
         img:Express
+    },
+    {
+        name:"NEXT.JS",
+        img:next
     }
 ]
