@@ -5,12 +5,13 @@ import Transition from "../Transition/Transition";
 import { proyectos2 } from "../proyectos2/proyectos";
 import Image from "next/image";
 import internet from "../../../../public/image/4c910ee68a0f4fe8029f72e40bc10fe6-icono-de-navegacion-por-internet-trazo-rosa.png"
+import Footer2 from "../Name/footer";
 
 export default function proyectos() {
   const array = ["PROYECTOS."];
 
   return (
-    <div className="flex flex-col justify-center items-center gap-20">
+    <div className="flex min-h-screen flex-col justify-center items-center gap-20">
       <Transition></Transition>
       <div className="flex justify-center font-bold text-5xl text-gray-400 sm:text-7xl tracking-wide md:tracking-widest">
         {array[0].split("").map((e, index) => (
@@ -49,7 +50,7 @@ export default function proyectos() {
           //   </div>
           //   <a href={e.deploy}>DEPLOY</a>
           // </div>
-          <div className="w-[300px] h-[280px] lg:w-[500px] lg:h-[380px] bg-transparent  rounded-xl m-5 group perspective">
+          <div className="w-[300px] h-[280px] lg:w-[450px] lg:h-[300px] bg-transparent  rounded-xl m-5 group perspective">
             
             <div className="relative preseve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000  rounded-xl">
               <div className="absolute backface-hidden border-2 w-full h-full rounded-xl ">
@@ -61,7 +62,7 @@ export default function proyectos() {
               <div className="absolute my-rotate-y-180 backface-hidden w-full h-full bg-black rounded-xl">
                 <div className="text-center flex flex-col items-center justify-center h-auto">
                     <h1 className=" text-red-600 font-bold text-xl lg:text-2xl">{e.name}</h1>
-                    <p className="text-gray-400  text-sm lg:text-xl">{e.parrafo}</p>
+                    <p className="text-gray-400  text-sm lg:text-sm">{e.parrafo}</p>
                     <div className="flex flex-row overflow-hidden mt-6">
                <h1 className="mr-5 text-red-600 font-bold text-sm lg:text-xl">TECNOLOGIAS:</h1>
                {e.tecno.map((f, index2) => (
@@ -74,10 +75,15 @@ export default function proyectos() {
               <Image src={internet} width={40} height={40}></Image>
             </a>
                 </div>
+            
               </div>
             </div>
           </div>
         ))}
+      </div>
+      <div className="w-full mt-10">
+
+      <Footer2></Footer2>
       </div>
     </div>
   );

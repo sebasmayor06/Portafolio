@@ -69,7 +69,7 @@ const cerrarBoton = ()=>{
        <Link href={'/'}><li className='md:px-5 hover:text-gray-400'><h3>INICIO</h3></li> </Link>
         <Link href={'/components/Sobremi'}><li className='md:px-5 hover:text-gray-400'><h3>SOBRE MI</h3></li></Link>
         <Link href={'/components/Proyectos'}><li className='md:px-5 hover:text-gray-400'><h3>PROYECTOS</h3></li></Link>
-        <li className='md:px-5 hover:text-gray-400'><h3>CONTACTAME</h3></li>
+        <Link href={'/components/Contactame'}> <li className='md:px-5 hover:text-gray-400'><h3>CONTACTAME</h3></li></Link>
         </ul> 
 
     </div>
