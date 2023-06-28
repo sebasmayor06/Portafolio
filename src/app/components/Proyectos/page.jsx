@@ -11,7 +11,7 @@ export default function proyectos() {
   const array = ["PROYECTOS."];
 
   return (
-    <div className="flex min-h-screen flex-col justify-center items-center gap-20">
+    <div className="flex min-h-screen flex-col justify-between items-center gap-20">
       <Transition></Transition>
       <div className="flex justify-center font-bold text-5xl text-gray-400 sm:text-7xl tracking-wide md:tracking-widest">
         {array[0].split("").map((e, index) => (
