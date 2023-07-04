@@ -29,12 +29,12 @@ export default function page() {
 
 
   return (
-    <div className='flex flex-col  gap-24'>
+    <div className='flex flex-col gap-24'>
 
       <h1  className='animate-fade-down animate-once animate-duration-1000 animate-delay-500 animate-ease-out animate-normal animate-fill-backwards flex justify-center font-bold text-5xl text-gray-400 sm:text-7xl tracking-wide md:tracking-widest m-4'> CONTACTAME <span className='text-red-600'>.</span></h1>
     <div className='flex flex-col lg:flex lg:flex-row justify-around items-center '>
 
-  <div className='flex flex-col gap-2 sm:text-sm lg:text-xl'  >
+  <div className='flex flex-col gap-2 sm:text-sm lg:text-xl bg-red-600 bg-opacity-[8%] border-2 border-solid border-gray-400 rounded-lg p-4'  >
   
   
    <span className='text-gray-400'> <span className='font-bold text-red-700'>const</span> {` Contactame = ( ) =>{`} </span>
@@ -61,7 +61,7 @@ export default function page() {
       duration: 1.8,
       ease: 'easeInOut',
       repeatType: 'loop'}}
-    className='flex flex-col  relative bg-red-600 bg-opacity-[12%] border-2 border-solid border-gray-400 rounded-lg p-4' ref={form} onSubmit={sendEmail}>
+    className='flex flex-col p-4  relative ' ref={form} onSubmit={sendEmail}>
       <label className='font-bold text-gray-400' >NOMBRE</label>
       <input required={true} className='w-[250px] p-2 bg-gray-400 font-bold rounded-lg  text-black lg:w-[600px] mb-10' type="text" name="user_name" />
       <label className='font-bold text-gray-400'>EMAIL</label>
