@@ -18,6 +18,8 @@ import next from '../../../../public/imageTec/nextjs-icon-dark-background.png'
 import Halo from "../../../../public/image/HaloGame.png"
 import MedC from "../../../../public/image/MedConnect.png"
 import portafolio from "../../../../public/image/Portafolio2.png"
+import kacena from "../../../../public/image/kacena.png"
+import php from "../../../../public/imageTec/php.png"
 
 export const proyectos2 = [
     {
@@ -26,6 +28,13 @@ export const proyectos2 = [
         image:portafolio,
         tecno:[next, taildwind, javas],
         parrafo:"Es mi pagina web personal, donde enseño mis proyectos y conocimientos. La estare actualizando constantemente a medida que pase el tiempo y obtenga mas experiencia."
+    },
+    {
+        name:'KACENA',
+        deploy:"https://latkacena.com",
+        image:kacena,
+        tecno:[php, html,css3],
+        parrafo:"Diseño y Desarrollo de una aplicación web, cotizador y script con base de datos con perfil asesor y administrador para el manejo de cotizaciones",
     },
     {
     name:'HALOGAME APP',
